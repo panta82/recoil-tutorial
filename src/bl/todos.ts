@@ -17,6 +17,8 @@ export const todoListState = atom({
   default: [] as ITodoItem[],
 });
 
+// *************************************************************************************************
+
 export type ITodoListFilter = "all" | "completed" | "uncompleted";
 
 export const todoListFilterState = atom<ITodoListFilter>({
@@ -37,5 +39,26 @@ export const filteredTodoListState = selector({
         return list.filter((item) => !item.isComplete);
     }
     return list;
+  },
+});
+
+// *************************************************************************************************
+
+export const todoListStatsState = selector({
+  key: "todoListStatsState",
+  get: ({ get }) => {
+    const todoList = get(todoListState);
+    const totalCount = todoList.length;
+    const completedCount = todoList.filter((item) => item.isComplete).length;
+    const uncompletedCount = totalCount - completedCount;
+    const percentCompleted =
+      totalCount === 0 ? 0 : ((completedCount * 100) / totalCount).toFixed(2);
+
+    return {
+      totalCount,
+      completedCount,
+      uncompletedCount,
+      percentCompleted,
+    };
   },
 });

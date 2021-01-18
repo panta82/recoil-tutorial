@@ -21,3 +21,5 @@ Following https://recoiljs.org/docs/introduction/getting-started
 - Having to write a unique text description of an atom feels weird. It's not like I am later using that somewhere. It's only for testing or debugging?
 
 - I wonder if I can put atoms in context, instead of using them as globals?
+
+- Recoil selectors are fine, but I don't like that they seem 100% dedicated to recoil. Not much room to access or use with other stuff (unless with globals / singletons again).

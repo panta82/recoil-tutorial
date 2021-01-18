@@ -6,6 +6,7 @@ import { TodoItem } from "./TodoItem";
 import { TodoListFilters } from "./TodoListFilters";
 
 import "./TodoList.css";
+import { TodoListStats } from "./TodoListStats";
 
 export function TodoList() {
   const todoList = useRecoilValue(filteredTodoListState);
@@ -18,6 +19,8 @@ export function TodoList() {
       {todoList.map((item) => (
         <TodoItem key={item.id} item={item} />
       ))}
+
+      <TodoListStats />
     </div>
   );
 }
