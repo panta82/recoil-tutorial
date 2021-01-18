@@ -1,6 +1,8 @@
 .TodoList .TodoItemCreator {
+  margin-bottom: 10px;
+}
+.TodoList .TodoListFilters {
   margin-bottom: 20px;
-  width: 100%;
 }
 .TodoList .TodoItem {
   margin-bottom: 5px;

@@ -22,7 +22,9 @@ code {
   position: relative;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
+  background: white;
   padding: 6px 8px;
   border: 1px solid #1d4e51;
   border-radius: 4px;

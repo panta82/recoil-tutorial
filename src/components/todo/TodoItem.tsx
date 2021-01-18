@@ -1,6 +1,6 @@
 import React from "react";
-import { ITodoItem, todoListState } from "../bl/todos";
-import { arrayRemove, arrayReplace } from "../bl/tools";
+import { ITodoItem, todoListState } from "../../bl/todos";
+import { arrayRemove, arrayReplace } from "../../bl/tools";
 import { useRecoilState } from "recoil";
 
 import "./TodoItem.css";
