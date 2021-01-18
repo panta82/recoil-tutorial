@@ -1,0 +1,7 @@
+.TodoList .TodoItemCreator {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.TodoList .TodoItem {
+  margin-bottom: 5px;
+}

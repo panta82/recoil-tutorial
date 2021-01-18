@@ -1,12 +1,14 @@
 import React from "react";
 import { RecoilRoot } from "recoil";
-import { CharacterCounter } from "./CharacterCounter";
+import { TodoList } from "./TodoList";
+import "./App.css";
 
 function App() {
   return (
     <RecoilRoot>
-      <div className="App">
-        <CharacterCounter />
+      <div className="App container">
+        <h1>Recoil TODO</h1>
+        <TodoList />
       </div>
     </RecoilRoot>
   );

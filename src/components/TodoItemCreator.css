@@ -1,0 +1,14 @@
+.TodoItemCreator form {
+  display: flex;
+}
+.TodoItemCreator input {
+  flex-grow: 1;
+}
+.TodoItemCreator input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.TodoItemCreator button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
