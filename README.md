@@ -31,3 +31,7 @@ Following https://recoiljs.org/docs/introduction/getting-started
   It seems I have to add a suspense wrapper around the entire component, can't use it inside. Lame.
 
 - Interesting, it seems recoil is caching async responses based on id. Seems like a footgun. 
+
+Overall, it's *fine*. But like most modern React, it seems overengineered and way too "magical" for its own good.
+
+I'll stick to redux for now.
